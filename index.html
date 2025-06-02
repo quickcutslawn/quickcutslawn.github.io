@@ -43,6 +43,22 @@
             margin: auto;
         }
 
+        .logo {
+            opacity: 0.5; /* makes it semi-transparent */
+            position: relative;
+            display: block;
+            margin: 20px auto;
+            width: 200px; /* adjust as needed */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* floating effect */
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: translateY(-10px); /* floating on hover */
+            opacity: 0.7;
+        }
+
+
         img {
             max-width: 100%;
             height: auto;
@@ -83,7 +99,7 @@
         <!-- Company Logo -->
         <div class="section">
             <h2>Welcome to Quick Cuts</h2>
-            <img src="quickcuts.webp" alt="Quick Cuts Lawn Care Logo">
+            <img src="quickcuts.webp" alt="Quick Cuts Lawn Care Logo" class="logo">
             <p>We provide professional and reliable lawn maintenance for residential and commercial properties.</p>
         </div>
 
